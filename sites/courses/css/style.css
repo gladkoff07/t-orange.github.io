@@ -640,6 +640,8 @@ section{
 	
 	section{
 		min-width:300px;
+		max-width: 300px;
+		margin: 0 auto;
 	}
 
 	.wrapper-header{
@@ -671,7 +673,7 @@ section{
 		.block-sale-description{
 			font-size: 16px;
 			margin-top: 55px;
-			padding: 0 1%;
+			padding: 0 3%;
 		}
 
 		.block-sale-date{
