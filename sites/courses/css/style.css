@@ -57,6 +57,16 @@
 	font-style: normal;
 }
 
+@font-face {
+    font-family: 'franklingothicheavy_allfont_ru';
+    src: url('../font/franklingothicheavy_allfont_ru.eot');
+    src: url('../font/franklingothicheavy_allfont_ru.eot') format('embedded-opentype'),
+         url('../font/franklingothicheavy_allfont_ru.woff2') format('woff2'),
+         url('../font/franklingothicheavy_allfont_ru.woff') format('woff'),
+         url('../font/franklingothicheavy_allfont_ru.ttf') format('truetype'),
+         url('../font/franklingothicheavy_allfont_ru.svg#franklingothicheavy_allfont_ru') format('svg');
+}
+
 body{
 	font-family: 'Conv_CalibriL';
 	line-height: 1.4;
@@ -123,22 +133,44 @@ section{
 			}
 
 		.block-sale-size{
-			margin-top: 63px;
 			text-transform: uppercase;
-			padding-left: 10%;
+			overflow: hidden;
+			margin-top: 5px;
+			position: relative;
+			padding: 0 19.6% 0 11%;
 		}
 
-			.block-sale-size span{
+			.block-sale-size>span{
 				font-size: 27px;
 				font-family: 'CalibriBold';
+				position: absolute;
+				top: 41%;
+				letter-spacing: 0.9px;
 			}
 
+			.sale-size-number{
+				font-family: 'franklingothicheavy_allfont_ru';
+				font-size: 172px;
+				float: right;
+				position: relative;
+				line-height: 0.8;
+			}
+
+				.sale-size-number>span{
+					font-size: 58px;
+					font-family: 'calibri';
+					position: absolute;
+					top: 5px;
+					right: -41px;
+					line-height: 1;
+				}
+
 		.block-sale-description{
-			font-size: 22px;
+			font-size: 24px;
 			text-align: center;
-			margin-top: 73px;
-			line-height: 1.1;
-			padding: 0 2%;
+			margin-top: 31px;
+			line-height: 1;
+			padding: 0 5%;
 		}
 
 		.block-sale-date{
@@ -654,7 +686,7 @@ section{
 	}
 
 		.block-sale-header{
-			font-size: 22px;
+			font-size: 26px;
 		}
 
 		.block-sale-header>span{
@@ -662,18 +694,27 @@ section{
 		}
 
 		.block-sale-size{
-			margin-top: 44px;
-			padding-left: 5%;
+			margin-top: 14px;
+			padding: 0 14% 0 10%;
 		}
 
 			.block-sale-size span{
 				font-size: 20px;
 			}
 
+			.sale-size-number{
+				font-size: 100px;
+			}
+
+				.sale-size-number>span{
+					right: -22px;
+					font-size: 30px;
+				}
+
 		.block-sale-description{
 			font-size: 16px;
-			margin-top: 55px;
-			padding: 0 3%;
+			margin-top: 28px;
+			padding: 0 13%;
 		}
 
 		.block-sale-date{
