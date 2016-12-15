@@ -187,6 +187,19 @@ section{
 	padding: 60px 0 147px;
 }
 
+	.block-video{
+		height: 325px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+		.block-video>iframe{
+			width: 50%;
+			margin: 0 auto;
+			height: 100%;
+			border: none;
+		}
+
 	.align-justify{
 		text-align: justify;
 		line-height: 0;
@@ -593,6 +606,10 @@ section{
 		padding: 60px 0;
 	}
 
+		.block-video{
+			height: 210px;
+		}
+
 		.list-courses>li{
 			width: 49%;
 			min-height: 515px;
@@ -672,7 +689,6 @@ section{
 	
 	section{
 		min-width:300px;
-		max-width: 300px;
 		margin: 0 auto;
 	}
 
@@ -726,6 +742,14 @@ section{
 		padding: 30px 0;
 		margin-top: -75px;
 	}
+
+		.block-video{
+			height: 170px;
+		}
+
+			.block-video>iframe{
+				width: 100%;
+			}
 
 		.list-courses>li{
 			width: 100%;
