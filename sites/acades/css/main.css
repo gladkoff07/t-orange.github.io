@@ -505,3 +505,99 @@ section {
       .b-servises-tabs__nav-item:hover {
         color: #ff2f00;
       }
+
+/*====================================
+            audit
+====================================*/
+.b-audit {
+  height: 369px;
+  background-image: url(../img/more_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #fff;
+}
+
+  .b-audit .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .b-audit h3 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .b-audit-form {
+    margin-top: 35px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+    .b-audit-form__input {
+      width: 32%;
+      height: 45px;
+      padding: 0 10px 0 15px;
+      background-color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .b-audit-form__submit {
+      width: 32%;
+      height: 45px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      -webkit-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+      color: #333;
+      background-color: #ffa81c;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .b-audit-form__submit:hover {
+      color: #ffa81c;
+      background-color: #333;
+    }
+
+  .b-audit-privacy {
+    margin-top: 35px;
+    padding: 0 20%;
+    text-align: center;
+  }
+
+    .b-audit-privacy a {
+      color: #fff;
+    }
+
+      .b-audit-privacy a:hover {
+        text-decoration: none;
+      }
