@@ -646,13 +646,395 @@ section {
     }
 
     .text-column__img {
-      max-width: 100%;
+      min-height: 150px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
+
+      .text-column__img img {
+        max-height: 100%;
+        width: auto;
+      }
 
     .text-column__name {
       font-weight: bold;
+      font-size: 22px;
     }
 
     .text-column__description {
       margin-top: 15px;
     }
+
+/*====================================
+            b-dynamic-list
+====================================*/
+.b-dynamic-list {
+  padding: 40px 0;
+}
+
+  .b-dynamic-list h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .dynamic-list-wrapper {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+    .dynamic-list-tabs {
+      width: 50%;
+    }
+
+      .dynamic-list-tabs__item {
+        position: relative;
+        padding: 25px 10px 25px 60px;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #e4e4e4;
+        cursor: pointer;
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+      }
+
+      .dynamic-list-tabs__item:before {
+        content: "\2714";
+        position: absolute;
+        left: 10px;
+        top: 25px;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #ffca1d;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .dynamic-list-tabs__item:hover {
+        background-color: #f9f9f9;
+      }
+
+        .dynamic-list-tabs__name {
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .dynamic-list-tabs__description {
+          margin: 10px 0 0 0;
+        }
+
+      .dynamic-list-tabs__item_active {
+        background-color: #192d3c;
+        cursor: default;
+        color: #fff;
+      }
+
+      .dynamic-list-tabs__item_active:hover {
+        background-color: #192d3c;
+      }
+
+        .dynamic-list-tabs__item_active:before {
+          color: #fff;
+        }
+
+    .dynamic-list-content {
+      width: 50%;
+    }
+
+      .dynamic-list-content__item {
+        display: none;
+        padding: 10px 3% 20px;
+      }
+
+      .dynamic-list-content__item_active {
+        display: block;
+      }
+
+        .dynamic-list-content__header {
+          font-size: 26px;
+        }
+
+      .b-dynamic-lider {}
+
+        .b-dynamic-lider-slider {
+          margin-top: 30px;
+          position: relative;
+        }
+
+          .b-dynamic-lider-slider__item {
+            padding: 0 2%;
+          }
+
+          .b-dynamic-lider-slider__img {
+            min-height: 170px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+          }
+
+          .b-dynamic-lider-slider__result {
+            font-size: 24px;
+            font-weight: bold;
+          }
+
+          .b-dynamic-lider-slider__text {
+            margin-top: 5px;
+            font-size: 16px;
+          }
+
+          .b-dynamic-lider-slider .slick-dots {
+            margin-top: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+          }
+
+            .b-dynamic-lider-slider .slick-dots li {
+              margin: 0 7px;
+              display: inline-block;
+              vertical-align: top;
+            }
+
+            .b-dynamic-lider-slider button {
+              width: 10px;
+              height: 10px;
+              padding: 0;
+              border-radius: 50%;
+              border: none;
+              font-size: 0;
+              cursor: pointer;
+              -webkit-transition: all .3s ease-out;
+              -o-transition: all .3s ease-out;
+              transition: all .3s ease-out;
+              background-color: #d6d6d6;
+              outline: none;
+            }
+
+            .b-dynamic-lider-slider button:hover {
+              background-color: #869791;
+            }
+
+            .b-dynamic-lider-slider .slick-dots li.slick-active button {
+              background-color: #869791;
+            }
+
+        .b-dynamic-lider-text {
+          margin-top: 40px;
+        }
+
+      .b-dynamic-result {}
+
+        .b-dynamic-result-list {
+          margin-top: 25px;
+        }
+
+          .b-dynamic-result-list__item {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 30px;
+          }
+
+          .b-dynamic-result-list__item:last-child {
+            margin-bottom: 0;
+          }
+
+            .b-dynamic-result-list__number {
+              position: absolute;
+              left: 0;
+              top: -30px;
+              font-size: 60px; 
+              font-weight: bold;
+              color: #ffca1d;
+            }
+
+            .b-dynamic-result-list__name {
+              font-size: 22px;
+              font-weight: bold;
+              position: relative;
+              z-index: 1;
+            }
+
+            .b-dynamic-result-list__text {
+              margin-top: 10px;
+              font-size: 16px;
+              position: relative;
+              z-index: 1;
+            }
+
+      .b-dynamic-benefits {}
+
+        .b-dynamic-benefits-list {
+          margin-top: 25px;
+          padding-left: 4%;
+        }
+
+          .b-dynamic-benefits-list__item {
+            margin-bottom: 25px;
+          }
+
+          .b-dynamic-benefits-list__item:last-child {
+            margin-bottom: 0;
+          }
+
+          .b-dynamic-benefits-list__number {
+            float: left;
+            position: relative;
+            margin: -3px 10px -3px 0;
+            font-weight: bold;
+            font-size: 22px;
+          }
+
+          .b-dynamic-benefits-list__number:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -3px;
+            top: 1px;
+            height: 100%;
+            width: 100%;
+            padding: 1px 0px 1px 6px;
+            background-color: #ffca1d;
+            z-index: -1;
+            -webkit-transform: rotate(-4deg) skew(-10deg);
+            -ms-transform: rotate(-4deg) skew(-10deg);
+            transform: rotate(-4deg) skew(-10deg);
+          }
+
+          .b-dynamic-benefits-list__text {
+            font-size: 18px;
+          }
+
+      .b-dynamic-technology {}
+
+        .b-dynamic-technology-accordion {
+          margin-top: 15px;
+          padding-left: 5%;
+        }
+
+          .b-dynamic-technology-accordion__item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e4e4e4;
+          }
+
+          .b-dynamic-technology-accordion__item:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+          }
+
+          .b-dynamic-technology-accordion__item-header {
+            position: relative;
+            padding: 1px 10px 13px 65px;
+            cursor: pointer;
+          }
+
+          .b-dynamic-technology-accordion__item-header:after {
+            content: "\203A";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            font-size: 40px;
+            line-height: 0;
+            -webkit-transition: all .1s ease-out;
+            -o-transition: all .1s ease-out;
+            transition: all .1s ease-out;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+
+          .b-dynamic-technology-accordion__item-header_active:after {
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+
+            .b-dynamic-technology-accordion__num {
+              position: absolute;
+              left: 0;
+              top: 1px;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              text-align: center;
+              background-color: #f0f0f0;
+              font-size: 22px;
+              line-height: 40px;
+            }
+
+            .b-dynamic-technology-accordion__name {
+              text-transform: uppercase;
+              font-size: 22px;
+            }
+
+            .b-dynamic-technology-accordion__description {
+              font-size: 14px;
+            }
+
+            .b-dynamic-technology-accordion__content {
+              height: 0;
+              margin-top: 5px;
+              padding-left: 65px;
+              visibility: hidden;
+            }
+
+              .b-dynamic-technology-accordion__content p {
+                margin: 0 0 10px 0;
+              }
+
+              .b-dynamic-technology-accordion__content ul {}
+
+                .b-dynamic-technology-accordion__content ul li {
+                  margin-bottom: 10px;
+                  padding-left: 15px;
+                  position: relative;
+                }
+
+                .b-dynamic-technology-accordion__content ul li:before {
+                  content: "\2022";
+                  position: absolute;
+                  left: 0;
+                  top: 8px;
+                  color: #81ba3c;
+                  font-size: 24px;
+                  line-height: 0;
+                }
+
+            .b-dynamic-technology-accordion__content_active {
+              height: auto;
+              visibility: visible;
+            }
+
+            .b-dynamic-technology-accordion__description_none {
+              display: none;
+            }
