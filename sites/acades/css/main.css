@@ -19,7 +19,8 @@ body {
   font-family: 'Exo 2', sans-serif;
   font-size: 16px;
   line-height: 1.3;
-  background: #fff; 
+  background: #fff;
+  color: #333;
 }
 
 .container {
@@ -499,11 +500,11 @@ section {
 
         .b-servises-tabs__nav-item_active:before {
           color: #fff;
-          background-color: #ff2f00;
+          background-color: #ffa81c;
         }
 
       .b-servises-tabs__nav-item:hover {
-        color: #ff2f00;
+        color: #ffa81c;
       }
 
 /*====================================
@@ -724,7 +725,7 @@ section {
         top: 25px;
         height: 30px;
         width: 30px;
-        border: 2px solid #ffca1d;
+        border: 2px solid #ffa81c;
         border-radius: 50%;
         text-align: center;
         line-height: 32px;
@@ -875,7 +876,7 @@ section {
               top: -30px;
               font-size: 60px; 
               font-weight: bold;
-              color: #ffca1d;
+              color: #ffa81c;
             }
 
             .b-dynamic-result-list__name {
@@ -924,7 +925,7 @@ section {
             height: 100%;
             width: 100%;
             padding: 1px 0px 1px 6px;
-            background-color: #ffca1d;
+            background-color: #ffa81c;
             z-index: -1;
             -webkit-transform: rotate(-4deg) skew(-10deg);
             -ms-transform: rotate(-4deg) skew(-10deg);
@@ -1147,7 +1148,7 @@ section {
           width: 25px;
           height: 25px;
           border-radius: 50%;
-          background-color: #ccc;
+          background-color: #ffa81c;
           color: #fff;
           font-weight: bold;
           text-align: center;
@@ -1186,7 +1187,7 @@ section {
     left: 50%;
     top: 0;
     bottom: 8%;
-    border-right: 2px dashed #a9db64;
+    border-right: 2px dashed #ffa81c;
   }
 
     .b-promotion-list__line {
@@ -1221,7 +1222,7 @@ section {
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: #ffc93d;
+      background-color: #ffa81c;
       z-index: 1;
     }
 
@@ -1237,7 +1238,7 @@ section {
 
       .b-promotion-steps__head {
         padding: 10px 10px 10px 50px;
-        background-color: #ffc93d;
+        background-color: #ffa81c;
         border-radius: 15px 15px 0 0;
         font-size: 20px;
         font-weight: bold;
@@ -1260,7 +1261,7 @@ section {
       padding-top: 6%;
       text-transform: uppercase;
       font-size: 20px;
-      color: #ffc93d;
+      color: #333;
     }
 
   .b-promotion-list__line_correct {}
@@ -1292,4 +1293,157 @@ section {
       -ms-flex-order: 0;
       order: 0;
       text-align: right;
+    }
+
+/*====================================
+            servises-order
+====================================*/
+.b-servises-order {
+  padding: 40px 0;
+  background-color: #f6f6f6;
+}
+
+  .b-servises-order__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+    .b-servises-order__content {
+      width: 70%;
+      padding: 30px 3% 20px 5%;
+      background-color: #fff;
+    }
+      
+      .b-servises-order__content h3 {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .b-servises-order__text {
+        margin-top: 30px;
+      }
+
+    .b-servises-order__form {
+      width: 30%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 30px 5%;
+      background-color: #ffa81c;
+      color: #333;
+      text-align: center;
+    }
+
+      .b-servises-order__form-header {
+        text-transform: uppercase;
+        font-size: 22px;
+      }
+
+      .b-servises-order__form-intro {
+        margin-top: 20px;
+      }
+
+      .b-servises-order__form-link {
+        margin-top: 30px;
+        display: inline-block;
+        padding: 10px 40px;
+        color: #333;
+        border: 2px solid #333;
+        text-decoration: none;
+      }
+
+      .b-servises-order__form-link:hover {
+        background-color: #333;
+        color: #ffa81c;
+      }
+
+/*====================================
+            b-servises-item
+====================================*/
+.b-servises-item {
+  padding: 40px 0;
+  background-color: #f6f6f6;
+}
+
+  .b-servises-item__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+    .b-servises-item__content {
+      width: 65.5%;
+      position: relative;
+      padding: 30px 3% 20px 5%;
+      background-color: #fff;
+    }
+
+      .b-servises-item__content h3 {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .b-servises-item__content p {
+        margin: 30px 0 0;
+      }
+
+      .b-servises-item__link {
+        position: absolute;
+        bottom: 30px;
+        left: 7%;
+        padding-left: 55px;
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+      }
+
+        .b-servises-item__link:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          left: 0;
+          top: -10px;
+          width: 48px;
+          height: 48px;
+          background-image: url(../img/base64.png);
+          background-repeat: no-repeat;
+        }
+
+      .b-servises-item__link:hover {
+        opacity: .8;
+      }
+
+    .b-servises-item__img {
+      width: 34.5%;
     }
