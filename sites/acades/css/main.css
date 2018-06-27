@@ -601,3 +601,58 @@ section {
       .b-audit-privacy a:hover {
         text-decoration: none;
       }
+
+/*====================================
+            text-column
+====================================*/
+.b-text-column {
+  padding: 40px 0;
+}
+
+  .b-text-column h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .text-column {
+    margin-top: 45px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+    .text-column_item-2 {
+      width: 48%;
+      text-align: center;
+    }
+
+    .text-column_item-3 {
+      width: 30%;
+      text-align: center;
+    }
+
+    .text-column_item-4 {
+      width: 24%;
+      text-align: center;
+    }
+
+    .text-column__img {
+      max-width: 100%;
+    }
+
+    .text-column__name {
+      font-weight: bold;
+    }
+
+    .text-column__description {
+      margin-top: 15px;
+    }
