@@ -29,10 +29,10 @@ body {
   margin-right: auto; 
 }
 
-/*.container-large {
+.container-large {
   width: 1200px;
   padding: 0 10px;
-}*/
+}
 
 ul {
   padding: 0;
@@ -1570,6 +1570,17 @@ section {
 
   .b-servises-item__img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .container-large {
+    width: 100%;
+  }
+
+  .b-steps-list__item:nth-child(3n):after {
+    right: -4%;
   }
 }
 
