@@ -1700,6 +1700,7 @@ section {
 
   .dynamic-list-content {
     width: 100%;
+    overflow: hidden;
   }
 
   .dynamic-list-content__item {
